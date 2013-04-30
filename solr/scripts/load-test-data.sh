@@ -36,7 +36,7 @@ echo Reloaded Solr
 
 # Retrieve and load test data
 cd $HOME
-curl $CURL_OPTS "$SOLR_RESOURCES/example-data/cities.xml" > cities.xml
+curl $CURL_OPTS "$SOLR_RESOURCES/example-data/$EXAMPLE_DATA" > $EXAMPLE_DATA
 echo Downloaded Solr resources
 
 echo Posting file $EXAMPLE_DATA to $SOLR_URL
