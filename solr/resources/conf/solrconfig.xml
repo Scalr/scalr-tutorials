@@ -133,7 +133,7 @@
   </queryResponseWriter>
 
   <admin>
-    <defaultQuery>solr</defaultQuery>
+    <defaultQuery>"New York City"</defaultQuery>
   </admin>
 
 </config>
