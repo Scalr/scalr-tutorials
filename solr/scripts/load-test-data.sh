@@ -3,12 +3,19 @@
 
 apt-get -y install curl
 
+TOMCAT_WEBROOT=/var/lib/tomcat6/webapps/ROOT
 SOLR_CONF=/etc/solr/conf
 SOLR_RESOURCES=https://s3.amazonaws.com/scalr-tutorials/solr
 EXAMPLE_DATA=cities.xml
 SOLR_URL=http://$SOLR_HOST:$SOLR_PORT/solr/update
 
 CURL_OPTS="--silent"
+
+
+echo Adding redirect to the Solr admin
+cd $TOMCAT_WEBROOT
+curl $CURL_OPTS $SOLR_RESOURCES/pages/index.jsp > index.jsp
+rm -f index.html
 
 echo Starting upload script
 echo
