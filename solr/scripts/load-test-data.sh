@@ -4,7 +4,7 @@
 apt-get -y install curl
 
 SOLR_CONF=/etc/solr/conf
-SOLR_RESOURCES=https://s3.amazonaws.com/scalr-examples/solr
+SOLR_RESOURCES=https://s3.amazonaws.com/scalr-tutorials/solr
 EXAMPLE_DATA=cities.xml
 SOLR_URL=http://$SOLR_HOST:$SOLR_PORT/solr/update
 
