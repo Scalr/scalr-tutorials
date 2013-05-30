@@ -3,19 +3,15 @@
 
 apt-get -y install curl
 
-TOMCAT_WEBROOT=/var/lib/tomcat6/webapps/ROOT
-SOLR_CONF=/etc/solr/conf
-SOLR_RESOURCES=https://s3.amazonaws.com/scalr-tutorials/solr
-EXAMPLE_DATA=cities.xml
+SOLR_HOST=%solr_host%
+SOLR_PORT=%solr_port%
+EXAMPLE_DATA=%example_data%
+
 SOLR_URL=http://$SOLR_HOST:$SOLR_PORT/solr/update
+TMP_FILE=/tmp/$$-solr-test.xml
 
 CURL_OPTS="--silent"
 
-
-echo Adding redirect to the Solr admin
-cd $TOMCAT_WEBROOT
-curl $CURL_OPTS $SOLR_RESOURCES/pages/index.jsp > index.jsp
-rm -f index.html
 
 echo Starting upload script
 echo
@@ -29,27 +25,18 @@ then
         exit 1
 fi
 
-
-# Retrieve configuration files
-cd $SOLR_CONF
-curl $CURL_OPTS "$SOLR_RESOURCES/conf/schema.xml" > schema.xml
-curl $CURL_OPTS "$SOLR_RESOURCES/conf/solrconfig.xml" > solrconfig.xml
-curl $CURL_OPTS "$SOLR_RESOURCES/conf/stopwords.txt" > stopwords.txt
-echo Loaded Solr config
-
-# Restart Solr with new config
-service tomcat6 restart
-echo Reloaded Solr
-
 # Retrieve and load test data
 cd $HOME
-curl $CURL_OPTS "$SOLR_RESOURCES/example-data/$EXAMPLE_DATA" > $EXAMPLE_DATA
+curl $CURL_OPTS "$EXAMPLE_DATA" > $TMP_FILE
 echo Downloaded Solr resources
 
-echo Posting file $EXAMPLE_DATA to $SOLR_URL
+echo Posting file $TMP_FILE
 echo
 
-curl $CURL_OPTS "$SOLR_URL?commit=true" --data-binary @$EXAMPLE_DATA -H 'Content-type:application/xml' 
+curl $CURL_OPTS "$SOLR_URL?commit=true" --data-binary @$TMP_FILE -H 'Content-type:application/xml' 
 
 # Load the data
 echo Loaded Solr data
+
+# Clear the temporary file
+rm $TMP_FILE
