@@ -1,3 +1,6 @@
 [submodule "webapp"]
 	path = webapp
 	url = git@github.com:Scalr/scalr-demo.git
+[submodule "custom-metric-app"]
+	path = custom-metric-app
+	url = git@github.com:Scalr/custom-metric-app.git
