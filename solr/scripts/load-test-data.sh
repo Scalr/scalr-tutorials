@@ -1,6 +1,9 @@
 #!/bin/bash
 # Load test configuration and data for Solr
 
+# Crash eagerly
+set -e
+
 apt-get -y install curl
 
 SOLR_HOST=%solr_host%

@@ -11,6 +11,8 @@
 #                - solrconfig.xml
 #                - stopwords.txt
 
+# Crash eagerly
+set -e
 
 apt-get -y install curl
 
