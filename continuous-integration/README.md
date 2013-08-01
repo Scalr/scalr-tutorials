@@ -17,7 +17,7 @@ This tutorial lets you simulate a continuous integration workflow:
 Custom Events
 -------------
 
-Define two custom events: `OnCodeReady` and `OnBuildReady`.
+Define two custom events: `CodeReady` and `BuildReady`.
 
 
 Firing the events
