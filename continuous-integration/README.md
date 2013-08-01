@@ -30,7 +30,9 @@ Install the Scalr command line tools (scalrtools: `easy_install scalr`)
 
 ### Fire the event ###
 
-    scalr fire-custom-event -s 7d875be4-6ebc-4162-957a-32e369220039 \
+    scalr fire-custom-event -s $SERVER_ID \
                             -n CodeReady \
                             -v branch=feature/new
 
+
+You'll have to retrieve the retrieve the Server ID from the Scalr UI (or API)
