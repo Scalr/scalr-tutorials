@@ -11,7 +11,7 @@ This tutorial lets you simulate a continuous integration workflow:
      (This will be you on your laptop)
   2. The Build server creates a build, and uploads it somewhere it's available
      to the Client servers (we'll just pretend this location exists here)
-  3. The Client servers download the build and install it
+  3. The Client servers download the build and installs it
 
 
 Custom Events
