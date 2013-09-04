@@ -4,3 +4,27 @@
 [submodule "custom-metric-app"]
 	path = custom-metric-app
 	url = git@github.com:Scalr/custom-metric-app.git
+[submodule "workertier"]
+	path = workertier
+	url = git@github.com:scalr-tutorials/workertier.git
+[submodule "vpc-app"]
+	path = vpc-app
+	url = git@github.com:scalr-tutorials/vpc-app.git
+[submodule "monit-integration"]
+	path = monit-integration
+	url = git@github.com:scalr-tutorials/monit-integration.git
+[submodule "custom-solr-role"]
+	path = custom-solr-role
+	url = git@github.com:scalr-tutorials/custom-solr-role.git
+[submodule "custom-metrics"]
+	path = custom-metrics
+	url = git@github.com:scalr-tutorials/custom-metrics.git
+[submodule "continuous-integration"]
+	path = continuous-integration
+	url = git@github.com:scalr-tutorials/continuous-integration.git
+[submodule "api-examples"]
+	path = api-examples
+	url = git@github.com:scalr-tutorials/api-examples.git
+[submodule "3-tier-app"]
+	path = 3-tier-app
+	url = git@github.com:scalr-tutorials/3-tier-app.git
