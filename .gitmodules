@@ -28,3 +28,6 @@
 [submodule "3-tier-app"]
 	path = 3-tier-app
 	url = git@github.com:scalr-tutorials/3-tier-app.git
+[submodule "basic-orchestration"]
+	path = basic-orchestration
+	url = git@github.com:scalr-tutorials/basic-orchestration.git
