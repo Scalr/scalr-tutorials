@@ -25,3 +25,6 @@
 [submodule "basic-orchestration"]
 	path = basic-orchestration
 	url = git@github.com:scalr-tutorials/basic-orchestration.git
+[submodule "orchestration-examples"]
+	path = orchestration-examples
+	url = git@github.com:scalr-tutorials/orchestration-examples.git
