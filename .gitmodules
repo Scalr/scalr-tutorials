@@ -28,3 +28,6 @@
 [submodule "orchestration-examples"]
 	path = orchestration-examples
 	url = git@github.com:scalr-tutorials/orchestration-examples.git
+[submodule "chef-demo"]
+	path = chef-demo
+	url = git@github.com:scalr-tutorials/chef-demo.git
