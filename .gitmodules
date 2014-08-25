@@ -31,3 +31,60 @@
 [submodule "chef-demo"]
 	path = chef-demo
 	url = git@github.com:scalr-tutorials/chef-demo.git
+[submodule "zabbix-integration"]
+	path = zabbix-integration
+	url = https://github.com/scalr-tutorials/zabbix-integration.git
+[submodule "custom-event-api-client"]
+	path = custom-event-api-client
+	url = https://github.com/scalr-tutorials/custom-event-api-client.git
+[submodule "python-app-cookbook"]
+	path = python-app-cookbook
+	url = https://github.com/scalr-tutorials/python-app-cookbook.git
+[submodule "scalr-etcd"]
+	path = scalr-etcd
+	url = https://github.com/scalr-tutorials/scalr-etcd.git
+[submodule "replmon"]
+	path = replmon
+	url = https://github.com/scalr-tutorials/replmon.git
+[submodule "scalr-api-explorer-v2"]
+	path = scalr-api-explorer-v2
+	url = https://github.com/scalr-tutorials/scalr-api-explorer-v2.git
+[submodule "autoscaling"]
+	path = autoscaling
+	url = https://github.com/scalr-tutorials/autoscaling.git
+[submodule "scalr-cloudbursting"]
+	path = scalr-cloudbursting
+	url = https://github.com/scalr-tutorials/scalr-cloudbursting.git
+[submodule "scalr-saltstack"]
+	path = scalr-saltstack
+	url = https://github.com/scalr-tutorials/scalr-saltstack.git
+[submodule "webhooks-python-example"]
+	path = webhooks-python-example
+	url = https://github.com/scalr-tutorials/webhooks-python-example.git
+[submodule "scalr-docker"]
+	path = scalr-docker
+	url = https://github.com/scalr-tutorials/scalr-docker.git
+[submodule "scalr-petclinic"]
+	path = scalr-petclinic
+	url = https://github.com/scalr-tutorials/scalr-petclinic.git
+[submodule "scalr-cookbook"]
+	path = scalr-cookbook
+	url = https://github.com/scalr-tutorials/scalr-cookbook.git
+[submodule "scalr-api-explorer"]
+	path = scalr-api-explorer
+	url = https://github.com/scalr-tutorials/scalr-api-explorer.git
+[submodule "scalr-cassandra"]
+	path = scalr-cassandra
+	url = https://github.com/scalr-tutorials/scalr-cassandra.git
+[submodule "cdh-cookbook"]
+	path = cdh-cookbook
+	url = https://github.com/scalr-tutorials/cdh-cookbook.git
+[submodule "scalr-hadoop"]
+	path = scalr-hadoop
+	url = https://github.com/scalr-tutorials/scalr-hadoop.git
+[submodule "installer-ng-tests"]
+	path = installer-ng-tests
+	url = https://github.com/scalr-tutorials/installer-ng-tests.git
+[submodule "spring-petclinic"]
+	path = spring-petclinic
+	url = https://github.com/scalr-tutorials/spring-petclinic.git
